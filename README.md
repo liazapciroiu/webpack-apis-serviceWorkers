@@ -31,7 +31,7 @@ npm run build-prod
 ```
 npm run test
 ```
-** Please note that you will need an API Key that you can get [here](https://developer.aylien.com/signup). Set them in the dotenv module and replace them in src/srver/index.js.**
+**Please note that you will need an API Key that you can get [here](https://developer.aylien.com/signup). Set them in the dotenv module and replace them in src/srver/index.js.**
 
 ## Built With
 * HTML, CSS, JavaScript - front-end
