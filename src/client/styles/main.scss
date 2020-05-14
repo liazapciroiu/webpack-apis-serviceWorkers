@@ -1,1 +1,15 @@
-@import './resets.scss', './base.scss', './footer.scss', './form.scss', './header.scss'
+@import './resets.scss', './base.scss', './footer.scss', './form.scss', './header.scss', './results.scss';
+
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+main {
+  line-height: 1.6;
+  color: $textColor;
+}
+
+blockquote {
+  line-height: 1.3;
+}

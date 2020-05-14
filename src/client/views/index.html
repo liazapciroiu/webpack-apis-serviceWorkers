@@ -7,33 +7,41 @@
 </head>
 
 <body>
-
   <header>
-    <div class="">
-      Logo
-    </div>
-    <div class="">
-      navigation
-    </div>
+    <h1>Entity Level Sentiment Analysis</h1>
   </header>
-
   <main>
     <section>
-      <form class="" onsubmit="return handleSubmit(event)">
-        <input id="name" type="text" name="input" value="" onblur="onBlur()" placeholder="Name">
-        <input type="submit" name="" value="submit" onclick="return handleSubmit(event)"
-          onsubmit="return handleSubmit(event)">
+      <blockquote cite="https://en.wikipedia.org/wiki/Natural_language_processing">
+        Natural language processing (NLP) is a subfield of computer science, information engineering, and artificial
+        intelligence concerned with the interactions between computers and human (natural) languages, in particular how
+        to
+        program computers to process and analyze large amounts of natural language data.
+      </blockquote>
+      <p>For this project I'm using the
+        <a href="https://docs.aylien.com/" target="_blank">Aylien API.</a>
+      </p>
+    </section>
+    <section>
+      <form class="" onsubmit="return Client.handleSubmit(event)">
+        <label for="url">Enter your URL here:</label>
+        <input id="url" type="text" name="urlInput" placeholder="www.exemple.com" required />
+        <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)"
+          onsubmit="return Client.handleSubmit(event)">
       </form>
     </section>
 
-    <section>
-      <strong>Form Results:</strong>
-      <div id="results"></div>
+    <section id="results">
+      <strong>Analysis results</strong>
+      <div id="polarity"><span>Polarity: </span></div>
+      <div id="subjectivity"><span>Subjectivity: </span></div>
+      <div id="polarity-conf"><span>Polarity confidence: </span></div>
+      <div id="subjectivity-conf"><span>Subjectivity confidence: </span></div>
     </section>
   </main>
 
   <footer>
-    <p>This is a footer</p>
+    <p>&copy; 2020 - Udacity FEND project</p>
   </footer>
 
 </body>
